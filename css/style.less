@@ -1,0 +1,339 @@
+@import url(fontello.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* FIN DU RESET DE MEYER */
+body{
+	font-size : 16px;
+	font-family: 'Verdana', sans-serif;
+	background : url(../img/fond-body.png);
+}
+h1{
+	font-size : 60px;
+	font-family : TypefaceSix;
+	position : relative;
+	top : -135px;
+	left : 170px;
+}
+h2{
+	font-size : 24px;
+	font-family: 'Duru Sans', sans-serif;
+}
+th{
+	font-size : 20px;
+	font-family: 'Duru Sans', sans-serif;
+}
+/* banner */
+#banner{
+	background-color : #010101;
+	height : 354px;
+	text-align : center;
+}
+/* menu */
+#principale{
+	background-image : url(../img/degrade.png);
+	height : 100px;
+	text-align : center;
+	border-top : 2px solid #000;
+	border-bottom : 2px solid #000;
+}
+#principale ul{
+	width : 1000px;
+	height : 100px;
+	margin : 0 auto;
+	border-right : 1px solid #000;
+	border-left : 1px solid #000;
+}
+#principale li{
+	width : 248px;
+	height : 100px;
+	display : inline-block;
+	float : left;
+	border-left : 1px solid #000;
+	border-right : 1px solid #000;
+}
+#principale a:hover{
+	background-color : #b2b2b1;	
+}
+#principale a.active{
+	background : none;
+	-webkit-box-shadow: inset 0px 0px 10px 2px #000;
+	box-shadow: inset 0px 0px 10px 2px #000;
+}
+#principale a.active p:last-child, #principale a.active:hover p:last-child{
+	color : #FFAB2C;
+}
+#principale a.active:hover p:first-child{
+	color : #878786;
+}
+#principale a:hover p:first-child{
+	color : #fff;
+}
+#principale a:hover p:last-child{
+	color : #3c3c3b;
+}
+#principale a{
+	width : 248px;
+	height : 100px;
+	display : inline-block;
+	text-decoration : none;
+}
+#principale a p:first-child{
+	font-family : rockwell;
+	font-size : 20px;
+	color : #878786;
+	margin-top : 18px;
+}
+#principale a p:last-child{
+	font-family : TypeFaceSix;
+	font-size : 30px;
+	color : #dadad9;
+	margin-top : 5px;
+}
+#contenu{
+	width : 996px;
+	min-height : 500px;
+	border-left : 2px solid #000;
+	border-right : 2px solid #000;
+	padding-bottom : 20px;
+	margin : 0 auto;
+	background : url(../img/fond-contenu.png);
+	-webkit-box-shadow: 0px 0px 20px 5px ;
+	box-shadow: 0px 0px 20px 5px ; 	
+}
+/* forum content*/
+#navforum{
+	padding : 20px 20px 0 20px;
+}
+#navforum h2{
+	padding : 10px;
+	background-color : #B2B2B1;
+	border : 1px solid #6F6F6E;
+	margin-bottom : 10px;
+}
+#navforum h3{
+	display : inline-block;
+	padding : 10px;
+	background-color : #D0D0CF;
+	border : 1px solid #6F6F6E;
+	float : left;
+	margin-right : 10px;	
+}
+#navforum td{
+	padding : 10px;
+}
+#navforum .titrecat, #navforum .post{
+	overflow : hidden;
+	height : 40px;
+	margin-bottom : 10px;
+}
+#navforum .arbo1{
+	padding : 10px 0;
+	margin-right : 10px;
+	width : 10px;
+	height : 16px;
+	background-color : #D0D0CF;
+	border : 1px solid #6F6F6E;
+	float : left;
+}
+#navforum .arbo2{	
+	background-color : #ECECEC;
+	border : 1px solid #9D9C9C;
+	padding : 10px 0;
+	margin-right : 10px;
+	width : 10px;
+	height : 18px;
+	float : left;
+}
+#navforum .post:hover span:not(:first-of-type){
+	color : #F6A50A;
+	background-color : #6F6F6E;
+	border-top : 1px solid #F6A50A;
+	border-bottom: 1px solid #F6A50A;
+	padding : 11px 20px 11px 9px;
+}
+#navforum .post:hover span:nth-child(2){
+	border-left: 1px solid #F6A50A;
+}
+#navforum .post:hover span:last-child{
+	border-right: 1px solid #F6A50A;
+}
+#navforum .post:hover .arbo2{
+	border : 1px solid #F6A50A;	
+}
+#navforum .sujet, .nompost{
+	width : 274px;
+}
+#navforum .auteur, .nomauteur{
+	width : 180px;
+	text-align : center;
+}
+#navforum .reponse, .nombrereponse{
+	width : 65px;
+	text-align : center;
+}
+#navforum .vue, .nombrevue{
+	width : 65px;
+	text-align : center;
+}
+#navforum .maj, .date{
+	width : 200px;
+	text-align : center;
+	margin-right : 0;
+}
+.post span{
+	display : inline-block;
+	padding : 11px 20px 11px 10px;
+	float : left;
+	background-color : #ECECEC;
+	border-top : 1px solid #9D9C9C;
+	border-bottom : 1px solid #9D9C9C;
+}
+.post span:not(:first-of-type){
+	padding : 11px 20px 11px 9px;
+}
+.post span:nth-child(2){
+	border-left: 1px solid #9D9C9C;
+}
+.post span:last-child{
+	border-right: 1px solid #9D9C9C;
+}
+/* goodshop content */
+#goodshop{
+	padding : 20px 20px 0 20px;
+	overflow : hidden;
+}
+#colgauche{
+	float : left;
+	width : 49%;
+	margin-right : 2%;
+}
+#coldroite{
+	float : left;
+	width : 49%;
+}
+#goodshop section h3{
+	background-color : #B2B2B1;
+	border : 1px solid #6F6F6E;
+	margin-bottom : 10px;
+}
+#goodshop section h3 a{
+	text-decoration : none;
+	display : inline-block;
+	box-sizing : border-box;
+	width : 424px;
+	padding : 10px;
+	color : #000;
+}
+#goodshop section h3:hover{
+	border : 1px solid #F6A50A;
+}
+#goodshop>div>section{
+	background-color : #ECECEC;
+	border : 1px solid #9D9C9C;
+	padding : 10px;
+	overflow : hidden;
+	margin-bottom : 20px;
+}
+#goodshop>div>section .logo{
+	background : url(../img/logo-flechewallonne.jpg);
+	background-size : 400%;
+	background-repeat : no-repeat;
+	width : 39%;
+	border : 1px solid #9D9C9C;
+	height : 120px;
+	float : left;
+	margin-right : 2%;
+	box-sizing : border-box;
+}
+#goodshop #magasin3 .logo{
+	background : url(../img/logo-pbt.jpg);
+	background-size : 100%;
+	background-repeat : no-repeat;
+}
+#goodshop>div>section .infos{
+	width : 58%;
+	float : left;
+}
+#goodshop>div>section .infos>*{
+	display : inline-block;
+	margin-bottom : 5px;
+	padding-left : 5px;
+	padding-top : 5px;
+}
+#goodshop>div>section .infos a{
+	text-decoration : none;
+	color : #F6A50A;
+}
+/* pagination */
+#pagination{
+	display : inline-block;
+	width : 420px;
+	margin-left :  268px;
+}
+#pagination a, #pagination .disabled{
+	display : inline-block;
+	width : 25px;
+	height : 25px;
+	line-height : 25px;
+	text-align : center;
+	text-decoration : none;
+	color : #fff;
+	border : 1px solid #1C1C1B;
+	background : url(../img/fond-pagination-noir.png);
+	float : left;
+	margin-right : 5px;
+}
+#pagination .disabled{
+	color : #000;
+	background : url(../img/fond-pagination-gris.png);
+}
+#pagination a:hover{
+	border : 1px solid #F6A50A;
+	color : #F6A50A;
+}
